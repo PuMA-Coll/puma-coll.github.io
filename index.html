@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PuMA — Pulsar Monitoring in Argentina</title>
+<meta name="description" content="PuMA is the pulsar monitoring collaboration of the Argentine Institute of Radioastronomy (IAR) and RIT: glitches, magnetars, fast radio bursts, single pulses and gravitational-wave searches with LIGO–Virgo–KAGRA.">
+<meta name="theme-color" content="#070a14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PuMA — Pulsar Monitoring in Argentina">
+<meta property="og:description" content="Long-term pulsar monitoring from the southern hemisphere with the two 30 m antennas of the Argentine Institute of Radioastronomy.">
+<meta property="og:image" content="http://puma.iar.unlp.edu.ar/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070a14'/%3E%3Cpath d='M3 22h6l3-12 3 18 3-10 2 4h9' fill='none' stroke='%23ffb454' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Apply the saved theme before first paint to avoid a flash. */
+  try { var t = localStorage.getItem('puma-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  document.documentElement.classList.add('js');
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="PuMA">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 22h6l3-12 3 18 3-10 2 4h9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>PuMA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-i18n-aria="menu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#research" data-i18n="nav.research">Research</a>
+      <a href="#atels" data-i18n="nav.atels">ATels</a>
+      <a href="#publications" data-i18n="nav.pubs">Publications</a>
+      <a href="#lvk" data-i18n="nav.lvk">LVK</a>
+      <a href="#observatory" data-i18n="nav.obs">Observatory</a>
+      <a href="#people" data-i18n="nav.people">People</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="theme-toggle" type="button" data-i18n-aria="theme" aria-label="Toggle light/dark theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <canvas id="pulses" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Argentine Institute of Radioastronomy · Rochester Institute of Technology</p>
+    <h1>PuMA<span class="h1-sub" data-i18n="hero.title">Pulsar Monitoring in Argentina</span></h1>
+    <p class="lead" data-i18n="hero.lead">We listen to neutron stars from the southern sky. With the two 30-metre antennas of the IAR we monitor pulsars for years, catch their glitches as they happen, and follow magnetars and fast radio bursts.</p>
+    <div class="cta">
+      <a class="btn primary" href="#atels" data-i18n="hero.cta1">Latest detections</a>
+      <a class="btn" href="#publications" data-i18n="hero.cta2">Publications</a>
+    </div>
+    <ul class="stats" id="stats" aria-label="PuMA in numbers"></ul>
+  </div>
+</section>
+
+<!-- WHAT IS A PULSAR -->
+<section class="section pulsar" id="pulsar">
+  <div class="wrap pulsar-grid">
+    <div class="pulsar-text">
+      <p class="kicker" data-i18n="pulsar.kicker">The basics</p>
+      <h2 data-i18n="pulsar.title">What is a pulsar?</h2>
+      <p data-i18n="pulsar.p1">A pulsar is a neutron star: the collapsed core of a massive star, more massive than the Sun yet only about 20 km across. It spins fast and carries an extremely strong magnetic field.</p>
+      <p data-i18n="pulsar.p2">Its magnetic axis is tilted with respect to its rotation axis, so beams of radio waves sweep around like the light of a lighthouse. Each time a beam points at the Earth, our antennas record a pulse. Some pulsars are as regular as the best atomic clocks.</p>
+      <p data-i18n="pulsar.p3">That regularity is what lets us notice when something changes, such as a glitch, an abrupt spin-up of the star. Catching those moments is what we do.</p>
+    </div>
+    <figure class="pulsar-fig">
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcset="images/pulsar-poster.jpg">
+        <img src="images/pulsar.gif" width="520" height="520" loading="lazy" decoding="async" alt="Animation of a pulsar: a spinning neutron star with magnetic field lines and a radio beam that sweeps past the Earth; the pulse profile below lights up once per rotation." data-i18n-alt="pulsar.alt">
+      </picture>
+      <figcaption data-i18n="pulsar.cap">Schematic animation, not to scale: each time the beam sweeps across our line of sight, the detector records one pulse.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="research.kicker">Research</p>
+      <h2 data-i18n="research.title">What we study</h2>
+      <p class="sec-lead" data-i18n="research.lead">PuMA is a scientific collaboration dedicated to pulsar observation from the southern hemisphere. Our long-term campaigns on rapidly rotating, highly magnetised neutron stars aim to understand their nature. Pick a topic to filter the telegrams and papers below.</p>
+    </header>
+    <div class="topics" id="topics"></div>
+  </div>
+</section>
+
+<!-- ATELS -->
+<section class="section alt" id="atels">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="atels.kicker">Astronomer’s Telegrams</p>
+      <h2 data-i18n="atels.title">Latest detections</h2>
+      <p class="sec-lead" data-i18n="atels.lead">When something happens in the sky, we tell the community. These are the telegrams we have published on The Astronomer’s Telegram, on behalf of the PuMA Collaboration.</p>
+    </header>
+    <div class="chips" id="atel-filters" role="group" aria-label="Filter telegrams by topic"></div>
+    <ol class="timeline" id="atel-list"></ol>
+    <p class="empty" id="atel-empty" hidden data-i18n="empty">Nothing here for this filter yet.</p>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="pubs.kicker">Publications</p>
+      <h2 data-i18n="pubs.title">Papers, proceedings and preprints</h2>
+      <p class="sec-lead" data-i18n="pubs.lead">Everything the collaboration has published, from the first antenna upgrade paper to the latest preprints.</p>
+    </header>
+    <div class="chips" id="pub-type-filters" role="group" aria-label="Filter by type"></div>
+    <div class="chips" id="pub-topic-filters" role="group" aria-label="Filter by topic"></div>
+    <ol class="pubs" id="pub-list"></ol>
+    <p class="empty" id="pub-empty" hidden data-i18n="empty">Nothing here for this filter yet.</p>
+  </div>
+</section>
+
+<!-- LVK -->
+<section class="section lvk" id="lvk">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="lvk.kicker">Gravitational waves</p>
+      <h2 data-i18n="lvk.title">Collaboration with <span class="nb">LIGO–Virgo–KAGRA</span></h2>
+    </header>
+    <div class="lvk-grid">
+      <div class="lvk-text">
+        <p data-i18n="lvk.p1">PuMA provides pulsar timing ephemerides to the LIGO–Virgo–KAGRA (LVK) Collaboration, for the O4a and O4b observing runs. An accurate ephemeris tells a gravitational-wave search exactly when and at what frequency to expect a signal from a known pulsar, which is what makes sensitive searches for continuous waves possible.</p>
+        <p data-i18n="lvk.p2">We were also the ones who supplied the ephemerides for the 2024 Vela glitch. With them, the LVK looked for gravitational waves associated with the glitch: it found no significant candidates, and set the first direct upper limits on the gravitational-wave strain from this event, stricter than those inferred indirectly from the glitch energy.</p>
+        <ul class="lvk-list" id="lvk-list"></ul>
+      </div>
+      <figure class="lvk-fig" aria-hidden="true">
+        <svg viewBox="0 0 320 220" role="img" aria-label="">
+          <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="var(--c-gw)" stop-opacity="0"/><stop offset=".5" stop-color="var(--c-gw)"/><stop offset="1" stop-color="var(--c-gw)" stop-opacity="0"/></linearGradient></defs>
+          <g fill="none" stroke="var(--line)" stroke-width="1"><circle cx="160" cy="110" r="30"/><circle cx="160" cy="110" r="55"/><circle cx="160" cy="110" r="80"/><circle cx="160" cy="110" r="105"/></g>
+          <circle cx="160" cy="110" r="7" fill="var(--accent)"/>
+          <path d="M10 188 q 15 -26 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0" stroke="url(#g1)" stroke-width="2.2" fill="none"/>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- OBSERVATORY -->
+<section class="section" id="observatory">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="obs.kicker">Observatory</p>
+      <h2 data-i18n="obs.title">The Argentine Institute of Radioastronomy</h2>
+    </header>
+    <div class="obs-grid">
+      <div class="obs-text">
+        <h3 data-i18n="obs.h1">A brief history</h3>
+        <p data-i18n="obs.p1">The Instituto Argentino de Radioastronomía (IAR), in Villa Elisa, Buenos Aires, was founded in 1966 as a radio observatory with 30-metre parabolic single-dish antennas (Antenna II was built later, in 1977). Its first goal was a high-sensitivity neutral-hydrogen survey of the southern sky, completed in 2000 with a high-impact publication.</p>
+        <h3 data-i18n="obs.h2">Antennas Varsavsky (I) and Bajaja (II)</h3>
+        <p data-i18n="obs.p2">The two antennas cover declinations from −90° to −9°, with an hour-angle range of about 4 hours and an angular resolution of 30 arcminutes at 1420 MHz. Since 2004 they have been repaired and upgraded: the front end in 2009, new position encoders in 2014 and a software-defined radio for pulsar measurements from 2015. In collaboration with RIT, we refurbished and upgraded the antennas for high-quality pulsar science.</p>
+        <dl class="facts">
+          <div><dt data-i18n="obs.f1">Dishes</dt><dd data-i18n="obs.f1v">2 × 30 m</dd></div>
+          <div><dt data-i18n="obs.f2">Founded</dt><dd>1966</dd></div>
+          <div><dt data-i18n="obs.f3">Declination</dt><dd>−90° to −9°</dd></div>
+          <div><dt data-i18n="obs.f4">Resolution</dt><dd data-i18n="obs.f4v">30′ at 1420 MHz</dd></div>
+        </dl>
+      </div>
+      <div class="obs-photos">
+        <figure class="ph ph-main"><img src="images/iar-antenna-1.jpg" width="1200" height="1005" loading="lazy" decoding="async" alt="One of the two 30-metre antennas of the IAR under a blue sky" data-i18n-alt="obs.alt1"></figure>
+        <figure class="ph ph-side"><img src="images/iar-antenna-2.jpg" width="1200" height="1122" loading="lazy" decoding="async" alt="Lattice structure of an IAR antenna seen from below" data-i18n-alt="obs.alt2"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="band" role="img" aria-label="An IAR antenna silhouetted against the sunset" data-i18n-aria="obs.band">
+    <img src="images/iar-sunset.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="">
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="section alt" id="people">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker" data-i18n="people.kicker">People</p>
+      <h2 data-i18n="people.title">The team</h2>
+      <p class="sec-lead" data-i18n="people.lead">Scientists and technicians from the IAR and RIT, with colleagues from other institutions.</p>
+    </header>
+    <ul class="team" id="team"></ul>
+    <h3 class="sub" data-i18n="people.collab">Collaborators and co-authors</h3>
+    <ul class="names" id="collab"></ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div>
+      <p class="kicker" data-i18n="contact.kicker">Contact</p>
+      <h2 data-i18n="contact.title">Get in touch</h2>
+      <p class="sec-lead" data-i18n="contact.lead">Want to coordinate observations, share ephemerides or join the collaboration? Write to us.</p>
+      <ul class="contacts" id="contacts"></ul>
+      <address data-i18n="contact.addr">Instituto Argentino de Radioastronomía (IAR)<br>Villa Elisa, Buenos Aires, Argentina</address>
+    </div>
+    <div class="partners">
+      <p class="kicker" data-i18n="contact.partners">Institutions</p>
+      <ul>
+        <li><a href="https://iar.unlp.edu.ar" rel="noopener">Instituto Argentino de Radioastronomía</a></li>
+        <li><a href="https://unlp.edu.ar" rel="noopener">Universidad Nacional de La Plata</a></li>
+        <li><a href="https://www.rit.edu" rel="noopener">Rochester Institute of Technology</a></li>
+        <li><a href="https://www.ligo.org" rel="noopener">LIGO–Virgo–KAGRA Collaboration</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>© <span id="year">2026</span> PuMA Collaboration · IAR</p>
+    <p><a href="#top" data-i18n="foot.top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
