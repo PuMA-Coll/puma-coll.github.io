@@ -531,8 +531,8 @@ window.PUMA_DATA = {
    "name": "Ezequiel Zubieta",
    "photo": "images/team/ezequiel-zubieta.jpg",
    "role": {
-    "en": "PhD",
-    "es": "Doctorado"
+    "en": "Postdoc",
+    "es": "Posdoctorado"
    },
    "affil": "Instituto Argentino de Radioastronomía (IAR), Argentina"
   },
@@ -540,28 +540,19 @@ window.PUMA_DATA = {
    "name": "Susana B. Araujo Furlan",
    "photo": "images/team/susana-araujo-furlan.jpg",
    "role": {
-    "en": "PhD",
-    "es": "Doctorado"
+    "en": "Postdoc",
+    "es": "Posdoctorado"
    },
-   "affil": "IATE – Universidad Nacional de Córdoba, Argentina"
+   "affil": "Max-Planck-Institut für Radioastronomie, Bonn, Germany"
   },
   {
    "name": "Valentina Sosa Fiscella",
    "photo": "images/team/valentina-sosa-fiscella.jpg",
    "role": {
-    "en": "PhD",
-    "es": "Doctorado"
+    "en": "Postdoc",
+    "es": "Posdoctorado"
    },
-   "affil": "Rochester Institute of Technology (RIT), USA"
-  },
-  {
-   "name": "Fernando Hauscarriaga",
-   "photo": "images/team/fernando-hauscarriaga.jpg",
-   "role": {
-    "en": "Software development",
-    "es": "Desarrollo de software"
-   },
-   "affil": "Instituto Argentino de Radioastronomía (IAR), Argentina"
+   "affil": "ASTRON, The Netherlands"
   },
   {
    "name": "Emanuel López Palacios",
@@ -571,9 +562,19 @@ window.PUMA_DATA = {
     "es": "Estudiante de grado"
    },
    "affil": "Universidad Nacional del Sur, Argentina"
+  },
+  {
+   "name": "Amalia Veras",
+   "photo": null,
+   "role": {
+    "en": "Undergraduate student",
+    "es": "Estudiante de grado"
+   },
+   "affil": "Universidad Nacional de Córdoba, Argentina"
   }
  ],
  "collaborators": [
+  "Fernando Hauscarriaga",
   "Harsh Prajapati",
   "Gustavo E. Romero",
   "Ryan Missel",

@@ -203,11 +203,17 @@
     });
   }
 
+  function initials(name) {
+    var w = name.split(/\s+/).filter(function (x) { return /^[A-ZÁÉÍÓÚÑ]/.test(x); });
+    return (w[0] ? w[0][0] : '') + (w.length > 1 ? w[w.length - 1][0] : '');
+  }
+
   function renderPeople() {
     var ul = $('#team'); ul.textContent = '';
     D.people.forEach(function (p) {
       ul.appendChild(el('li', { class: 'person reveal' }, [
-        el('img', { src: p.photo, alt: p.name, width: '480', height: '480', loading: 'lazy', decoding: 'async' }),
+        p.photo ? el('img', { src: p.photo, alt: p.name, width: '480', height: '480', loading: 'lazy', decoding: 'async' })
+                : el('div', { class: 'avatar', 'aria-hidden': 'true', text: initials(p.name) }),
         el('h3', { text: p.name }),
         el('p', { class: 'role', text: tt(p.role) }),
         el('p', { class: 'affil', text: p.affil })

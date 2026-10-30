@@ -55,7 +55,7 @@ window.PUMA_I18N = {
     'people.kicker': 'Gente',
     'people.title': 'El equipo',
     'people.lead': 'Científicos y técnicos del IAR y de RIT, junto a colegas de otras instituciones.',
-    'people.collab': 'Colaboradores y coautores',
+    'people.collab': 'Colaboradores, coautores y ex integrantes',
     'contact.kicker': 'Contacto',
     'contact.title': 'Escribinos',
     'contact.lead': '¿Querés coordinar observaciones, compartir efemérides o sumarte a la colaboración? Escribinos.',

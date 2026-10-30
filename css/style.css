@@ -217,6 +217,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* People */
 .team { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 24px 20px; }
 .person img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); filter: saturate(.92); transition: filter .25s, transform .25s; }
+.avatar { width: 100%; aspect-ratio: 1; border-radius: 14px; border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--font-head); font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 500; letter-spacing: .02em; color: var(--accent); background: radial-gradient(120% 120% at 30% 20%, color-mix(in srgb, var(--accent) 18%, var(--surface-2)), var(--surface)); }
 .person:hover img { filter: none; transform: translateY(-3px); }
 .person h3 { font-size: 1.1rem; margin-top: 14px; font-weight: 500; letter-spacing: -.01em; }
 .person .role { color: var(--accent); font-size: .88rem; font-weight: 600; margin: 4px 0 2px; }
